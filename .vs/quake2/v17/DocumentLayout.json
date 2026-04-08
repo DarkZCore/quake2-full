@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mario\\source\\repos\\quake2-full\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_weapon.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\p_weapon.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F575AF4A-7BDD-47F6-B65F-F43C514E0069}|quake2.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\win32\\q2.rc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F575AF4A-7BDD-47F6-B65F-F43C514E0069}|quake2.vcxproj|solutionrelative:win32\\q2.rc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_weapon.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\g_weapon.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "p_weapon.c",
+              "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_weapon.c",
+              "RelativeDocumentMoniker": "game\\p_weapon.c",
+              "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_weapon.c",
+              "RelativeToolTip": "game\\p_weapon.c",
+              "ViewState": "AgIAAC0DAAAAAAAAAAAAAEADAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-04-08T22:32:52.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "g_weapon.c",
+              "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_weapon.c",
+              "RelativeDocumentMoniker": "game\\g_weapon.c",
+              "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_weapon.c",
+              "RelativeToolTip": "game\\g_weapon.c",
+              "ViewState": "AgIAAH8CAAAAAAAAAAAAAJECAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-04-08T22:31:48.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "q2.rc",
+              "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\win32\\q2.rc",
+              "RelativeDocumentMoniker": "win32\\q2.rc",
+              "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\win32\\q2.rc",
+              "RelativeToolTip": "win32\\q2.rc",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-04-02T14:58:20.529Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
