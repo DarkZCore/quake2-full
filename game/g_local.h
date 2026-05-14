@@ -768,6 +768,9 @@ void ClientBeginServerFrame (edict_t *ent);
 //
 void player_pain (edict_t *self, edict_t *other, float kick, int damage);
 void player_die (edict_t *self, edict_t *inflictor, edict_t *attacker, int damage, vec3_t point);
+void SP_monster_helper(edict_t* self);
+void helper_spawn(edict_t* ent);
+
 
 //
 // g_svcmds.c

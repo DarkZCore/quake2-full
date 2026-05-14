@@ -922,6 +922,24 @@ void HelpOverlay(edict_t* ent)
 	gi.unicast(ent, true);
 }
 
+void Cmd_SpawnHelper_f(edict_t* ent)
+{
+	edict_t* helper;
+	vec3_t forward, right, up, start;
+	vec3_t offset;
+
+	AngleVectors(ent->client->v_angle, forward, right, up);
+	VectorSet(offset, 64, 0, 0);
+	G_ProjectSource(ent->s.origin, offset, forward, right, start);
+
+	helper = G_Spawn();
+	helper->owner = ent;
+	helper->s.origin[0] = start[0];
+	helper->s.origin[1] = start[1];
+	helper->s.origin[2] = start[2];
+
+	SP_monster_helper(helper);
+}
 
 
 
@@ -978,6 +996,8 @@ void ClientCommand (edict_t *ent)
 
 	if (Q_stricmp (cmd, "use") == 0)
 		Cmd_Use_f (ent);
+	else if (Q_stricmp(cmd, "spawnhelper") == 0)
+		Cmd_SpawnHelper_f(ent);
 	else if (Q_stricmp (cmd, "drop") == 0)
 		Cmd_Drop_f (ent);
 	else if (Q_stricmp (cmd, "give") == 0)

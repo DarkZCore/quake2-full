@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\mario\\source\\repos\\quake2-full\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_helper.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\g_helper.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_cmds.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\g_cmds.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_local.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\g_local.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\g_main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -11,20 +23,12 @@
       "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\g_spawn.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_local.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\g_local.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\p_client.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_hud.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\p_hud.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_cmds.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|solutionrelative:game\\g_cmds.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99BC3F01-A7EE-4881-939F-8A5EB75E1973}|game\\game.vcxproj|C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_items.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -171,19 +175,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "g_helper.c",
+              "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_helper.c",
+              "RelativeDocumentMoniker": "game\\g_helper.c",
+              "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_helper.c",
+              "RelativeToolTip": "game\\g_helper.c",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-05-14T08:42:26.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "g_main.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_main.c",
               "RelativeDocumentMoniker": "game\\g_main.c",
               "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_main.c",
               "RelativeToolTip": "game\\g_main.c",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAYwH4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAYwH4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-05-14T08:25:00.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "g_chase.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\ctf\\g_chase.c",
               "RelativeDocumentMoniker": "ctf\\g_chase.c",
@@ -195,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "cmd.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\qcommon\\cmd.c",
               "RelativeDocumentMoniker": "qcommon\\cmd.c",
@@ -207,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "cl_parse.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\client\\cl_parse.c",
               "RelativeDocumentMoniker": "client\\cl_parse.c",
@@ -219,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "cl_main.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\client\\cl_main.c",
               "RelativeDocumentMoniker": "client\\cl_main.c",
@@ -231,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "g_items.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_items.c",
               "RelativeDocumentMoniker": "game\\g_items.c",
@@ -243,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "g_monster.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_monster.c",
               "RelativeDocumentMoniker": "game\\g_monster.c",
@@ -255,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "game.h",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\game.h",
               "RelativeDocumentMoniker": "game\\game.h",
@@ -263,25 +280,24 @@
               "RelativeToolTip": "game\\game.h",
               "ViewState": "AgIAAIsAAAAAAAAAAAAvwJUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-08T01:19:37.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T01:19:37.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "g_cmds.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_cmds.c",
               "RelativeDocumentMoniker": "game\\g_cmds.c",
               "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_cmds.c",
               "RelativeToolTip": "game\\g_cmds.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwDAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGcBAAAAAAAAAAAYwOcDAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-04-24T03:13:00.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "p_hud.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_hud.c",
               "RelativeDocumentMoniker": "game\\p_hud.c",
@@ -289,8 +305,7 @@
               "RelativeToolTip": "game\\p_hud.c",
               "ViewState": "AgIAABUCAAAAAAAAAAAYwCECAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-04-24T02:32:48.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T02:32:48.441Z"
             },
             {
               "$type": "Document",
@@ -300,14 +315,14 @@
               "RelativeDocumentMoniker": "game\\g_local.h",
               "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_local.h",
               "RelativeToolTip": "game\\g_local.h",
-              "ViewState": "AgIAADQBAAAAAAAAAAAvwFQBAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAPgCAAAAAAAAAAAAAAQDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-24T03:22:43.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "g_spawn.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_spawn.c",
               "RelativeDocumentMoniker": "game\\g_spawn.c",
@@ -315,12 +330,11 @@
               "RelativeToolTip": "game\\g_spawn.c",
               "ViewState": "AgIAAGIAAAAAAAAAAAAvwHkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-05-14T07:57:25.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T07:57:25.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "p_client.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_client.c",
               "RelativeDocumentMoniker": "game\\p_client.c",
@@ -328,12 +342,11 @@
               "RelativeToolTip": "game\\p_client.c",
               "ViewState": "AgIAAMgFAAAAAAAAAAAvwNwFAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-04-24T03:08:03.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T03:08:03.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "g_cmds.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\ctf\\g_cmds.c",
               "RelativeDocumentMoniker": "ctf\\g_cmds.c",
@@ -345,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "p_hud.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\ctf\\p_hud.c",
               "RelativeDocumentMoniker": "ctf\\p_hud.c",
@@ -357,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "g_weapon.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_weapon.c",
               "RelativeDocumentMoniker": "game\\g_weapon.c",
@@ -369,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "g_combat.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_combat.c",
               "RelativeDocumentMoniker": "game\\g_combat.c",
@@ -381,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "p_weapon.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_weapon.c",
               "RelativeDocumentMoniker": "game\\p_weapon.c",
@@ -393,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "m_hover.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_hover.c",
               "RelativeDocumentMoniker": "game\\m_hover.c",
@@ -405,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "m_medic.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_medic.c",
               "RelativeDocumentMoniker": "game\\m_medic.c",
@@ -417,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "m_mutant.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_mutant.c",
               "RelativeDocumentMoniker": "game\\m_mutant.c",
@@ -429,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "m_parasite.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_parasite.c",
               "RelativeDocumentMoniker": "game\\m_parasite.c",
@@ -441,7 +454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "g_func.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_func.c",
               "RelativeDocumentMoniker": "game\\g_func.c",
@@ -453,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "g_phys.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_phys.c",
               "RelativeDocumentMoniker": "game\\g_phys.c",
@@ -465,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "g_save.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_save.c",
               "RelativeDocumentMoniker": "game\\g_save.c",
@@ -477,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "g_target.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_target.c",
               "RelativeDocumentMoniker": "game\\g_target.c",
@@ -489,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "m_insane.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_insane.c",
               "RelativeDocumentMoniker": "game\\m_insane.c",
@@ -501,7 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "m_infantry.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_infantry.c",
               "RelativeDocumentMoniker": "game\\m_infantry.c",
@@ -513,7 +526,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "m_gunner.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_gunner.c",
               "RelativeDocumentMoniker": "game\\m_gunner.c",
@@ -525,7 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "m_gladiator.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_gladiator.c",
               "RelativeDocumentMoniker": "game\\m_gladiator.c",
@@ -537,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "m_flyer.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_flyer.c",
               "RelativeDocumentMoniker": "game\\m_flyer.c",
@@ -549,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "m_boss31.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_boss31.c",
               "RelativeDocumentMoniker": "game\\m_boss31.c",
@@ -561,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "m_float.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_float.c",
               "RelativeDocumentMoniker": "game\\m_float.c",
@@ -573,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "m_flipper.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_flipper.c",
               "RelativeDocumentMoniker": "game\\m_flipper.c",
@@ -585,7 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "m_chick.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_chick.c",
               "RelativeDocumentMoniker": "game\\m_chick.c",
@@ -597,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "m_brain.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_brain.c",
               "RelativeDocumentMoniker": "game\\m_brain.c",
@@ -609,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "m_boss2.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_boss2.c",
               "RelativeDocumentMoniker": "game\\m_boss2.c",
@@ -621,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "m_berserk.c",
               "DocumentMoniker": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\m_berserk.c",
               "RelativeDocumentMoniker": "game\\m_berserk.c",

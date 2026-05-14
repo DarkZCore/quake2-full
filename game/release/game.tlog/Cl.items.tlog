@@ -3,6 +3,7 @@ C:\Users\mario\source\repos\quake2-full\game\g_chase.c;C:\Users\mario\source\rep
 C:\Users\mario\source\repos\quake2-full\game\g_cmds.c;C:\Users\mario\source\repos\quake2-full\game\release\g_cmds.obj
 C:\Users\mario\source\repos\quake2-full\game\g_combat.c;C:\Users\mario\source\repos\quake2-full\game\release\g_combat.obj
 C:\Users\mario\source\repos\quake2-full\game\g_func.c;C:\Users\mario\source\repos\quake2-full\game\release\g_func.obj
+C:\Users\mario\source\repos\quake2-full\game\g_helper.c;C:\Users\mario\source\repos\quake2-full\game\release\g_helper.obj
 C:\Users\mario\source\repos\quake2-full\game\g_items.c;C:\Users\mario\source\repos\quake2-full\game\release\g_items.obj
 C:\Users\mario\source\repos\quake2-full\game\g_main.c;C:\Users\mario\source\repos\quake2-full\game\release\g_main.obj
 C:\Users\mario\source\repos\quake2-full\game\g_misc.c;C:\Users\mario\source\repos\quake2-full\game\release\g_misc.obj
