@@ -960,6 +960,9 @@ struct gclient_s
 	float		respawn_time;		// can respawn when time > this
 	float		snipertime;
 
+	int machinegun_burst_count;
+	float machinegun_burst_cooldown;
+
 	edict_t		*chase_target;		// player we are chasing
 	qboolean	update_chase;		// need to update chase info?
 };

@@ -17,6 +17,7 @@ C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(809,3): warning C4996: 'st
 C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(810,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(821,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(828,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  g_misc.c
 C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(875,7): warning C4459: declaration of 'st' hides global declaration
       C:\Users\mario\source\repos\quake2-full\game\g_local.h(456,21):
       see declaration of 'st'
@@ -32,7 +33,6 @@ C:\Users\mario\source\repos\quake2-full\game\g_func.c(436,84): warning C4100: 's
 C:\Users\mario\source\repos\quake2-full\game\g_func.c(436,65): warning C4100: 'plane': unreferenced formal parameter
 C:\Users\mario\source\repos\quake2-full\game\g_func.c(600,82): warning C4100: 'surf': unreferenced formal parameter
 C:\Users\mario\source\repos\quake2-full\game\g_func.c(600,63): warning C4100: 'plane': unreferenced formal parameter
-  g_misc.c
 C:\Users\mario\source\repos\quake2-full\game\g_func.c(606,60): warning C4100: 'activator': unreferenced formal parameter
 C:\Users\mario\source\repos\quake2-full\game\g_func.c(606,44): warning C4100: 'other': unreferenced formal parameter
 C:\Users\mario\source\repos\quake2-full\game\g_func.c(737,42): warning C4100: 'other': unreferenced formal parameter
@@ -407,7 +407,7 @@ C:\Users\mario\source\repos\quake2-full\game\p_hud.c(245,3): warning C4996: 'str
   p_view.c
 C:\Users\mario\source\repos\quake2-full\game\p_view.c(42,27): warning C4100: 'angles': unreferenced formal parameter
   p_weapon.c
-C:\Users\mario\source\repos\quake2-full\game\p_weapon.c(1316,8): warning C4189: 'damage_radius': local variable is initialized but not referenced
+C:\Users\mario\source\repos\quake2-full\game\p_weapon.c(1415,8): warning C4189: 'damage_radius': local variable is initialized but not referenced
   q_shared.c
 C:\Users\mario\source\repos\quake2-full\game\q_shared.c(266,40): warning C4100: 'f': unreferenced formal parameter
 C:\Users\mario\source\repos\quake2-full\game\q_shared.c(312,7): warning C4459: declaration of 'i' hides global declaration

@@ -162,8 +162,7 @@
               "RelativeToolTip": "game\\game.h",
               "ViewState": "AgIAADwAAAAAAAAAAAAvwFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-08T01:19:37.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-08T01:19:37.292Z"
             },
             {
               "$type": "Document",
@@ -223,8 +222,7 @@
               "RelativeToolTip": "game\\g_cmds.c",
               "ViewState": "AgIAAIkCAAAAAAAAAAAAAIkCAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-04-24T03:13:00.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T03:13:00.096Z"
             },
             {
               "$type": "Document",
@@ -234,7 +232,7 @@
               "RelativeDocumentMoniker": "game\\p_weapon.c",
               "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_weapon.c",
               "RelativeToolTip": "game\\p_weapon.c",
-              "ViewState": "AgIAAOwCAAAAAAAAAAAvwPsCAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAGEEAAAAAAAAAAAYwGoEAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-04-08T22:32:52.29Z",
               "EditorCaption": ""
@@ -247,7 +245,7 @@
               "RelativeDocumentMoniker": "game\\g_weapon.c",
               "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_weapon.c",
               "RelativeToolTip": "game\\g_weapon.c",
-              "ViewState": "AgIAAE0CAAAAAAAAAAAvwM0CAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAvwBABAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-04-08T22:31:48.534Z",
               "EditorCaption": ""
@@ -260,7 +258,7 @@
               "RelativeDocumentMoniker": "game\\g_local.h",
               "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\g_local.h",
               "RelativeToolTip": "game\\g_local.h",
-              "ViewState": "AgIAAKwDAAAAAAAAAAAvwMADAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAJIDAAAAAAAAAAAvwKYDAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-24T03:22:43.651Z",
               "EditorCaption": ""
