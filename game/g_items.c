@@ -2214,3 +2214,71 @@ void SetItemNames (void)
 	power_screen_index = ITEM_INDEX(FindItem("Power Screen"));
 	power_shield_index = ITEM_INDEX(FindItem("Power Shield"));
 }
+
+void Use_ShieldBubble(edict_t* ent, gitem_t* item)
+{
+	int armor_index = ITEM_INDEX(FindItem("Combat Armor"));
+
+	ent->client->pers.inventory[armor_index] += 50;
+	if (ent->client->pers.inventory[armor_index] > 150)
+		ent->client->pers.inventory[armor_index] = 150;
+
+	ent->client->shieldbubble_time = level.time + 0.1f; // optional marker
+}
+
+void Use_RandomPowerup(edict_t* ent)
+{
+	int choice;
+
+	if (ent->client->active_powerup != 0)
+	{
+		// deactivate current effect
+		ent->client->camo_time = 0;
+		ent->client->armorlock_time = 0;
+		ent->client->jetpack_time = 0;
+		ent->client->speedboost_time = 0;
+		ent->client->shieldbubble_time = 0;
+		ent->client->active_powerup = 0;
+
+		gi.cprintf(ent, PRINT_HIGH, "Powerup deactivated\n");
+		return;
+	}
+
+	choice = 1 + (rand() % 5);
+
+	// clear everything first so only one can be active
+	ent->client->camo_time = 0;
+	ent->client->armorlock_time = 0;
+	ent->client->jetpack_time = 0;
+	ent->client->speedboost_time = 0;
+	ent->client->shieldbubble_time = 0;
+
+	switch (choice)
+	{
+	case 1:
+		ent->client->camo_time = level.time + 10.0f;
+		ent->client->active_powerup = 1;
+		gi.cprintf(ent, PRINT_HIGH, "Powerup given: Camouflage\n");
+		break;
+	case 2:
+		ent->client->armorlock_time = level.time + 5.0f;
+		ent->client->active_powerup = 2;
+		gi.cprintf(ent, PRINT_HIGH, "Powerup given: Armor Lock\n");
+		break;
+	case 3:
+		ent->client->jetpack_time = level.time + 10.0f;
+		ent->client->active_powerup = 3;
+		gi.cprintf(ent, PRINT_HIGH, "Powerup given: Jetpack\n");
+		break;
+	case 4:
+		ent->client->speedboost_time = level.time + 10.0f;
+		ent->client->active_powerup = 4;
+		gi.cprintf(ent, PRINT_HIGH, "Powerup given: Speed Boost\n");
+		break;
+	case 5:
+		Use_ShieldBubble(ent, NULL);
+		ent->client->active_powerup = 5;
+		gi.cprintf(ent, PRINT_HIGH, "Powerup given: Shield Bubble\n");
+		break;
+	}
+}

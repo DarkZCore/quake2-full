@@ -1576,7 +1576,11 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 
 	level.current_entity = ent;
 	client = ent->client;
-
+	if (ent->client->armorlock_time > level.time)
+	{
+		VectorClear(ent->velocity);
+		ent->client->ps.pmove.pm_type = PM_FREEZE;
+	}
 	if (level.intermissiontime)
 	{
 		client->ps.pmove.pm_type = PM_FREEZE;
@@ -1659,6 +1663,7 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 		ent->waterlevel = pm.waterlevel;
 		ent->watertype = pm.watertype;
 		ent->groundentity = pm.groundentity;
+
 		if (pm.groundentity)
 			ent->groundentity_linkcount = pm.groundentity->linkcount;
 
@@ -1672,6 +1677,24 @@ void ClientThink (edict_t *ent, usercmd_t *ucmd)
 		{
 			VectorCopy (pm.viewangles, client->v_angle);
 			VectorCopy (pm.viewangles, client->ps.viewangles);
+		}
+
+		ent->groundentity = pm.groundentity;
+		if (pm.groundentity)
+		{
+			ent->groundentity_linkcount = pm.groundentity->linkcount;
+			client->doublejump_used = false;
+		}
+		else if (client->jetpack_time > level.time && (ucmd->upmove >= 10) && !client->doublejump_used)
+		{
+			ent->velocity[2] = 1000;
+			client->doublejump_used = true;
+		}
+
+		if (client->speedboost_time > level.time)
+		{
+			ent->velocity[0] *= 1.5f;
+			ent->velocity[1] *= 1.5f;
 		}
 
 		gi.linkentity (ent);

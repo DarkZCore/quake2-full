@@ -621,6 +621,8 @@ int PowerArmorType (edict_t *ent);
 gitem_t	*GetItemByIndex (int index);
 qboolean Add_Ammo (edict_t *ent, gitem_t *item, int count);
 void Touch_Item (edict_t *ent, edict_t *other, cplane_t *plane, csurface_t *surf);
+void Use_RandomPowerup(edict_t* ent);
+void ClearActivePowerup(edict_t* ent);
 
 //
 // g_utils.c
@@ -933,6 +935,13 @@ struct gclient_s
 	int			breather_sound;
 
 	int			machinegun_shots;	// for weapon raising
+	float		camo_time;
+	float		armorlock_time;
+	float		jetpack_time;
+	float		doublejump_used;
+	float		speedboost_time;
+	float		shieldbubble_time;
+	int			active_powerup;
 
 	// animation vars
 	int			anim_end;

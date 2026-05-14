@@ -410,6 +410,13 @@ void T_Damage (edict_t *targ, edict_t *inflictor, edict_t *attacker, vec3_t dir,
 	}
 
 	client = targ->client;
+	if (targ->client && targ->client->camo_time > level.time)
+	{
+		if (random() < 0.35f)
+			return;
+	}
+	if (targ->client && targ->client->armorlock_time > level.time)
+		return;
 
 	if (dflags & DAMAGE_BULLET)
 		te_sparks = TE_BULLET_SPARKS;
@@ -484,6 +491,7 @@ void T_Damage (edict_t *targ, edict_t *inflictor, edict_t *attacker, vec3_t dir,
 		return;
 
 // do the damage
+
 	if (take)
 	{
 		if ((targ->svflags & SVF_MONSTER) || (client))
