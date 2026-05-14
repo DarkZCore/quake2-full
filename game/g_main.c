@@ -84,11 +84,83 @@ void ReadGame (char *filename);
 void WriteLevel (char *filename);
 void ReadLevel (char *filename);
 void InitGame (void);
+void EnemyWaveThink(void);
 void G_RunFrame (void);
 
 
 //===================================================================
+void SpawnEnemyNearPlayer(void)
+{
+	edict_t* player;
+	edict_t* spawn;
+	vec3_t origin;
+	vec3_t forward, right, up;
+	vec3_t angles;
+	float dist;
+	float yaw;
+	trace_t tr;
+	int i;
 
+	
+	for (i = 1; i <= maxclients->value; i++)
+	{
+		player = &g_edicts[i];
+		if (!player->inuse || !player->client)
+			continue;
+		if (player->health <= 0)
+			continue;
+		break;
+	}
+
+	if (i > maxclients->value)
+		return;
+
+	yaw = random() * 360.0f;
+	angles[0] = 0;
+	angles[1] = yaw;
+	angles[2] = 0;
+	AngleVectors(angles, forward, right, up);
+
+	dist = 100 + (random() * 200);
+	VectorMA(player->s.origin, dist, forward, origin);
+	origin[2] += 128;
+	origin[1] += 128;
+
+	tr = gi.trace(origin, vec3_origin, vec3_origin, (vec3_t) { origin[0], origin[1], origin[2] - 1024 }, NULL, MASK_SOLID);
+
+	if (tr.fraction == 1.0f)
+		return; 
+
+	VectorCopy(tr.endpos, origin);
+
+	// spawn the monster
+	spawn = G_Spawn();
+	spawn->classname = "monster_infantry";
+	VectorCopy(origin, spawn->s.origin);
+
+
+	if (!strcmp(spawn->classname, "monster_infantry"))
+	{
+		SP_monster_infantry(spawn);
+	}
+
+	gi.dprintf("Spawned enemy near player at %f %f %f\n", origin[0], origin[1], origin[2]);
+}
+
+
+void EnemyWaveThink(void)
+{
+	if (level.time < level.enemy_spawn_time)
+		return;
+
+	SpawnEnemyNearPlayer();
+	level.enemy_spawn_time = level.time + 3.0f;
+	level.enemy_spawn_count++;
+
+	if (level.enemy_spawn_count % 5 == 0)
+		level.enemy_wave++;
+		gi.cprintf(NULL, PRINT_HIGH, "Enemy wave %d\n", level.enemy_wave);
+}
 
 void ShutdownGame (void)
 {
@@ -360,7 +432,7 @@ void G_RunFrame (void)
 
 	// choose a client for monsters to target this frame
 	AI_SetSightClient ();
-
+	EnemyWaveThink();
 	// exit intermissions
 
 	if (level.exitintermission)

@@ -29,6 +29,28 @@ INTERMISSION
 ======================================================================
 */
 
+void ShowPowerUps(edict_t* ent)
+{
+	char string[1024] = "";
+
+	if (ent->client->active_powerup == 1)
+		Com_sprintf(string, sizeof(string), "xv 10 yv 40 string \"Powerup: Camouflage\"\n");
+	else if (ent->client->active_powerup == 2)
+		Com_sprintf(string, sizeof(string), "xv 10 yv 40 string \"Powerup: Armor Lock\"\n");
+	else if (ent->client->active_powerup == 3)
+		Com_sprintf(string, sizeof(string), "xv 10 yv 40 string \"Powerup: Jetpack\"\n");
+	else if (ent->client->active_powerup == 4)
+		Com_sprintf(string, sizeof(string), "xv 10 yv 40 string \"Powerup: Speed Boost\"\n");
+	else if (ent->client->active_powerup == 5)
+		Com_sprintf(string, sizeof(string), "xv 10 yv 40 string \"Powerup: Shield Bubble\"\n");
+	else
+		return;
+
+	gi.WriteByte(svc_layout);
+	gi.WriteString(string);
+	gi.unicast(ent, true);
+}
+
 void MoveClientToIntermission (edict_t *ent)
 {
 	if (deathmatch->value || coop->value)
@@ -520,6 +542,7 @@ void G_SetStats (edict_t *ent)
 		ent->client->ps.stats[STAT_HELPICON] = 0;
 
 	ent->client->ps.stats[STAT_SPECTATOR] = 0;
+
 }
 
 /*

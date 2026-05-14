@@ -923,6 +923,8 @@ void HelpOverlay(edict_t* ent)
 }
 
 
+
+
 void ClientCommand (edict_t *ent)
 {
 	char	*cmd;
@@ -971,7 +973,6 @@ void ClientCommand (edict_t *ent)
 		HelpOverlay(ent);
 		return;
 	}
-
 	if (level.intermissiontime)
 		return;
 

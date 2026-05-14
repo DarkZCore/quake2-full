@@ -334,6 +334,10 @@ typedef struct
 	int			total_monsters;
 	int			killed_monsters;
 
+	float		enemy_spawn_time;
+	int			enemy_spawn_count;
+	int			enemy_wave;
+
 	edict_t		*current_entity;	// entity running from G_RunFrame
 	int			body_que;			// dead bodies
 
