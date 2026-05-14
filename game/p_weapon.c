@@ -758,6 +758,11 @@ ROCKET
 
 void Weapon_RocketLauncher_Fire (edict_t *ent)
 {
+	if (ent->client->snipertime > level.time)
+		return;
+
+	ent->client->snipertime = level.time + 1.0;
+
 	vec3_t	offset, start;
 	vec3_t	forward, right;
 	int		damage;
@@ -780,7 +785,8 @@ void Weapon_RocketLauncher_Fire (edict_t *ent)
 
 	VectorSet(offset, 8, 8, ent->viewheight-8);
 	P_ProjectSource (ent->client, ent->s.origin, offset, forward, right, start);
-	fire_rocket (ent, start, forward, damage, 650, damage_radius, radius_damage);
+	fire_bullet(ent, start, forward, damage, 200, 0, 0, MOD_RAILGUN);
+
 
 	// send muzzle flash
 	gi.WriteByte (svc_muzzleflash);
