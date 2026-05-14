@@ -1,5 +1,4 @@
 c:\users\mario\source\repos\quake2-full\game\release\vc143.pdb
-c:\users\mario\source\repos\quake2-full\game\release\m_berserk.obj
 c:\users\mario\source\repos\quake2-full\game\release\m_actor.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_weapon.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_utils.obj
@@ -14,12 +13,12 @@ c:\users\mario\source\repos\quake2-full\game\release\g_monster.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_misc.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_main.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_items.obj
+c:\users\mario\source\repos\quake2-full\game\release\g_helper.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_func.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_combat.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_cmds.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_chase.obj
 c:\users\mario\source\repos\quake2-full\game\release\g_ai.obj
-c:\users\mario\source\repos\quake2-full\game\release\m_soldier.obj
 c:\users\mario\source\repos\quake2-full\game\release\m_parasite.obj
 c:\users\mario\source\repos\quake2-full\game\release\m_mutant.obj
 c:\users\mario\source\repos\quake2-full\game\release\m_move.obj
@@ -39,6 +38,7 @@ c:\users\mario\source\repos\quake2-full\game\release\m_boss32.obj
 c:\users\mario\source\repos\quake2-full\game\release\m_boss31.obj
 c:\users\mario\source\repos\quake2-full\game\release\m_boss3.obj
 c:\users\mario\source\repos\quake2-full\game\release\m_boss2.obj
+c:\users\mario\source\repos\quake2-full\game\release\m_berserk.obj
 c:\users\mario\source\repos\quake2-full\game\release\q_shared.obj
 c:\users\mario\source\repos\quake2-full\game\release\p_weapon.obj
 c:\users\mario\source\repos\quake2-full\game\release\p_view.obj
@@ -47,6 +47,7 @@ c:\users\mario\source\repos\quake2-full\game\release\p_hud.obj
 c:\users\mario\source\repos\quake2-full\game\release\p_client.obj
 c:\users\mario\source\repos\quake2-full\game\release\m_tank.obj
 c:\users\mario\source\repos\quake2-full\game\release\m_supertank.obj
+c:\users\mario\source\repos\quake2-full\game\release\m_soldier.obj
 c:\users\mario\onedrive\desktop\quake 2\newmod\gamex86.dll
 c:\users\mario\source\repos\quake2-full\release\gamex86.lib
 c:\users\mario\source\repos\quake2-full\release\gamex86.exp

@@ -1,4 +1,22 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(520,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  g_cmds.c
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(34,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(57,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(58,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(722,4): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(725,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(808,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(809,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(810,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(821,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(828,2): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(875,7): warning C4459: declaration of 'st' hides global declaration
+      C:\Users\mario\source\repos\quake2-full\game\g_local.h(460,21):
+      see declaration of 'st'
+  
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(897,3): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(885,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\g_cmds.c(893,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   g_main.c
 C:\Users\mario\source\repos\quake2-full\game\g_main.c(89,40): warning C4013: 'SP_monster_soldier_x' undefined; assuming extern returning int
 C:\Users\mario\source\repos\quake2-full\game\g_main.c(90,41): warning C4013: 'SP_monster_infantry' undefined; assuming extern returning int
@@ -11,6 +29,12 @@ C:\Users\mario\source\repos\quake2-full\game\g_main.c(326,7): warning C4996: 'st
 C:\Users\mario\source\repos\quake2-full\game\g_main.c(328,7): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\mario\source\repos\quake2-full\game\g_main.c(332,9): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\mario\source\repos\quake2-full\game\g_main.c(345,8): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  p_hud.c
+C:\Users\mario\source\repos\quake2-full\game\p_hud.c(256,4): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\p_hud.c(267,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mario\source\repos\quake2-full\game\p_hud.c(422,41): warning C4047: '=': 'short' differs in levels of indirection from 'char *'
+  Generating Code...
+C:\Users\mario\source\repos\quake2-full\game\p_hud.c(445,1): warning C4701: potentially uninitialized local variable 'cells' used
 C:\Users\mario\source\repos\quake2-full\game\g_main.c(130,1): warning C4701: potentially uninitialized local variable 'player' used
 C:\Users\mario\source\repos\quake2-full\game\g_main.c(130,1): warning C4703: potentially uninitialized local pointer variable 'player' used
      Creating library .\..\release\gamex86.lib and object .\..\release\gamex86.exp
