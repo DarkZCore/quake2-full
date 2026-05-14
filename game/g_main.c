@@ -86,6 +86,11 @@ void ReadLevel (char *filename);
 void InitGame (void);
 void EnemyWaveThink(void);
 void G_RunFrame (void);
+void SP_monster_grunt(edict_t* self) { SP_monster_soldier_x(self); }
+void SP_monster_jackal(edict_t* self) { SP_monster_infantry(self); }
+void SP_monster_elite(edict_t* self) { SP_monster_gladiator(self); }
+void SP_monster_knight(edict_t* self) { SP_monster_tank(self); }
+void SP_monster_watcher(edict_t* self) { SP_monster_flyer(self); }
 
 
 //===================================================================
@@ -133,15 +138,31 @@ void SpawnEnemyNearPlayer(void)
 
 	VectorCopy(tr.endpos, origin);
 
-	// spawn the monster
 	spawn = G_Spawn();
-	spawn->classname = "monster_infantry";
 	VectorCopy(origin, spawn->s.origin);
 
-
-	if (!strcmp(spawn->classname, "monster_infantry"))
+	switch (rand() % 5)
 	{
-		SP_monster_infantry(spawn);
+	case 0:
+		spawn->classname = "monster_grunt";
+		SP_monster_grunt(spawn);
+		break;
+	case 1:
+		spawn->classname = "monster_jackal";
+		SP_monster_jackal(spawn);
+		break;
+	case 2:
+		spawn->classname = "monster_elite";
+		SP_monster_elite(spawn);
+		break;
+	case 3:
+		spawn->classname = "monster_knight";
+		SP_monster_knight(spawn);
+		break;
+	case 4:
+		spawn->classname = "monster_watcher";
+		SP_monster_watcher(spawn);
+		break;
 	}
 
 	gi.dprintf("Spawned enemy near player at %f %f %f\n", origin[0], origin[1], origin[2]);

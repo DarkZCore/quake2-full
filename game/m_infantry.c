@@ -582,7 +582,8 @@ void SP_monster_infantry (edict_t *self)
 	VectorSet (self->mins, -16, -16, -24);
 	VectorSet (self->maxs, 16, 16, 32);
 
-	self->health = 100;
+	self->health = 400;
+	self->max_health = 400;
 	self->gib_health = -40;
 	self->mass = 200;
 

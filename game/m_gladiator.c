@@ -356,6 +356,7 @@ void SP_monster_gladiator (edict_t *self)
 	sound_search = gi.soundindex ("gladiator/gldsrch1.wav");
 	sound_sight = gi.soundindex ("gladiator/sight.wav");
 
+	self->speed = 300;
 	self->movetype = MOVETYPE_STEP;
 	self->solid = SOLID_BBOX;
 	self->s.modelindex = gi.modelindex ("models/monsters/gladiatr/tris.md2");
@@ -378,6 +379,7 @@ void SP_monster_gladiator (edict_t *self)
 	self->monsterinfo.sight = gladiator_sight;
 	self->monsterinfo.idle = gladiator_idle;
 	self->monsterinfo.search = gladiator_search;
+	
 
 	gi.linkentity (self);
 	self->monsterinfo.currentmove = &gladiator_move_stand;

@@ -1141,6 +1141,8 @@ mframe_t soldier_frames_death6 [] =
 };
 mmove_t soldier_move_death6 = {FRAME_death601, FRAME_death610, soldier_frames_death6, soldier_dead};
 
+
+
 void soldier_die (edict_t *self, edict_t *inflictor, edict_t *attacker, int damage, vec3_t point)
 {
 	int		n;
@@ -1197,6 +1199,33 @@ void soldier_die (edict_t *self, edict_t *inflictor, edict_t *attacker, int dama
 // SPAWN
 //
 
+static void Grunt_Think(edict_t* self)
+{
+	vec3_t dir;
+
+	if (!self->enemy || !self->enemy->inuse)
+	{
+		self->nextthink = level.time + FRAMETIME;
+		return;
+	}
+
+	VectorSubtract(self->enemy->s.origin, self->s.origin, dir);
+
+	if (VectorLength(dir) < 40)
+	{
+		T_RadiusDamage(self, self, 80, self->enemy, 120, MOD_EXPLOSIVE);
+		gi.WriteByte(svc_temp_entity);
+		gi.WriteByte(TE_EXPLOSION1);
+		gi.WritePosition(self->s.origin);
+		gi.multicast(self->s.origin, MULTICAST_PVS);
+		G_FreeEdict(self);
+		return;
+	}
+
+	self->nextthink = level.time + FRAMETIME;
+}
+
+
 void SP_monster_soldier_x (edict_t *self)
 {
 
@@ -1224,6 +1253,8 @@ void SP_monster_soldier_x (edict_t *self)
 	self->monsterinfo.attack = soldier_attack;
 	self->monsterinfo.melee = NULL;
 	self->monsterinfo.sight = soldier_sight;
+	self->think = Grunt_Think;
+	self->nextthink = level.time + FRAMETIME;
 
 	gi.linkentity (self);
 

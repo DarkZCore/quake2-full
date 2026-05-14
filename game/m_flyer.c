@@ -383,7 +383,7 @@ void flyer_fire (edict_t *self, int flash_number)
 	end[2] += self->enemy->viewheight;
 	VectorSubtract (end, start, dir);
 
-	monster_fire_blaster (self, start, dir, 1, 1000, flash_number, effect);
+	monster_fire_rocket (self, start, dir, 1, 1000, flash_number);
 }
 
 void flyer_fireleft (edict_t *self)
@@ -603,7 +603,7 @@ void SP_monster_flyer (edict_t *self)
 
 	self->s.sound = gi.soundindex ("flyer/flyidle1.wav");
 
-	self->health = 50;
+	self->health = 10;
 	self->mass = 50;
 
 	self->pain = flyer_pain;

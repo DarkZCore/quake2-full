@@ -800,7 +800,9 @@ void SP_monster_tank (edict_t *self)
 	self->s.modelindex = gi.modelindex ("models/monsters/tank/tris.md2");
 	VectorSet (self->mins, -32, -32, -16);
 	VectorSet (self->maxs, 32, 32, 72);
-	self->movetype = MOVETYPE_STEP;
+	self->movetype = MOVETYPE_FLY;
+	self->health = 400;
+	self->max_health = 400;
 	self->solid = SOLID_BBOX;
 
 	sound_pain = gi.soundindex ("tank/tnkpain2.wav");
@@ -820,7 +822,7 @@ void SP_monster_tank (edict_t *self)
 	gi.soundindex ("tank/tnkatk2e.wav");
 	gi.soundindex ("tank/tnkatck3.wav");
 
-	if (strcmp(self->classname, "monster_tank_commander") == 0)
+	/*if (strcmp(self->classname, "monster_tank_commander") == 0)
 	{
 		self->health = 1000;
 		self->gib_health = -225;
@@ -829,7 +831,7 @@ void SP_monster_tank (edict_t *self)
 	{
 		self->health = 750;
 		self->gib_health = -200;
-	}
+	}*/
 
 	self->mass = 500;
 
@@ -843,6 +845,7 @@ void SP_monster_tank (edict_t *self)
 	self->monsterinfo.melee = NULL;
 	self->monsterinfo.sight = tank_sight;
 	self->monsterinfo.idle = tank_idle;
+
 
 	gi.linkentity (self);
 	
