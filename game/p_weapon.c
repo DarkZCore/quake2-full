@@ -1302,7 +1302,54 @@ RAILGUN
 
 ======================================================================
 */
+void weapon_bfgrail_fire(edict_t* ent)
+{
+	vec3_t	offset, start;
+	vec3_t	forward, right;
+	int		damage;
+	float	damage_radius = 1000;
 
+	if (deathmatch->value)
+		damage = 200;
+	else
+		damage = 500;
+
+	if (ent->client->ps.gunframe == 9)
+	{
+		// send muzzle flash
+		gi.WriteByte(svc_muzzleflash);
+		gi.WriteShort(ent - g_edicts);
+		gi.WriteByte(MZ_BFG | is_silenced);
+		gi.multicast(ent->s.origin, MULTICAST_PVS);
+
+		ent->client->ps.gunframe++;
+
+		PlayerNoise(ent, ent->s.origin, PNOISE_WEAPON);
+		return;
+	}
+
+
+	if (is_quad)
+		damage *= 4;
+
+	AngleVectors(ent->client->v_angle, forward, right, NULL);
+
+	VectorScale(forward, -2, ent->client->kick_origin);
+
+	// make a big pitch kick with an inverse fall
+	ent->client->v_dmg_pitch = -40;
+	ent->client->v_dmg_roll = crandom() * 8;
+	ent->client->v_dmg_time = level.time + DAMAGE_TIME;
+
+	VectorSet(offset, 8, 8, ent->viewheight - 8);
+	P_ProjectSource(ent->client, ent->s.origin, offset, forward, right, start);
+	fire_rail(ent, start, forward, damage, 200);
+
+	ent->client->ps.gunframe++;
+
+	PlayerNoise(ent, start, PNOISE_WEAPON);
+
+}
 void weapon_railgun_fire (edict_t *ent)
 {
 	vec3_t		start;
@@ -1336,6 +1383,7 @@ void weapon_railgun_fire (edict_t *ent)
 	VectorSet(offset, 0, 7,  ent->viewheight-8);
 	P_ProjectSource (ent->client, ent->s.origin, offset, forward, right, start);
 	fire_rail (ent, start, forward, damage, kick);
+	
 
 	// send muzzle flash
 	gi.WriteByte (svc_muzzleflash);
@@ -1353,10 +1401,10 @@ void weapon_railgun_fire (edict_t *ent)
 
 void Weapon_Railgun (edict_t *ent)
 {
-	static int	pause_frames[]	= {56, 0};
-	static int	fire_frames[]	= {4, 0};
+	static int	pause_frames[] = { 39, 45, 50, 55, 0 };
+	static int	fire_frames[] = { 9, 17, 0 };
 
-	Weapon_Generic (ent, 3, 18, 56, 61, pause_frames, fire_frames, weapon_railgun_fire);
+	Weapon_Generic(ent, 8, 32, 55, 58, pause_frames, fire_frames, weapon_bfgrail_fire);
 }
 
 
@@ -1367,6 +1415,7 @@ BFG10K
 
 ======================================================================
 */
+
 
 void weapon_bfg_fire (edict_t *ent)
 {
