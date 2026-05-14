@@ -908,6 +908,21 @@ void Cmd_Powerup_f(edict_t* ent)
 ClientCommand
 =================
 */
+
+void HelpOverlay(edict_t* ent)
+{
+	char string[1024];
+
+	Com_sprintf(string, sizeof(string),
+		"xv 0 yv 0 picn hs "
+	);
+
+	gi.WriteByte(svc_layout);
+	gi.WriteString(string);
+	gi.unicast(ent, true);
+}
+
+
 void ClientCommand (edict_t *ent)
 {
 	char	*cmd;
@@ -940,6 +955,20 @@ void ClientCommand (edict_t *ent)
 	if (Q_stricmp (cmd, "help") == 0)
 	{
 		Cmd_Help_f (ent);
+		return;
+	}
+	if (Q_stricmp(cmd, "togglehelp") == 0)
+	{
+		if (ent->client->showhelp)
+		{
+			ent->client->showhelp = false;
+			return;
+		}
+
+		ent->client->showhelp = true;
+		ent->client->showscores = false;
+		ent->client->showinventory = false;
+		HelpOverlay(ent);
 		return;
 	}
 

@@ -951,6 +951,19 @@ void Cmd_Say_f (edict_t *ent, qboolean team, qboolean arg0)
 ClientCommand
 =================
 */
+
+void HelpOverlay(edict_t* ent) {
+	char string[1024];
+
+	Com_sprintf(string, sizeof(string), 
+		"xv 0 yv 0 picn hs "
+	);
+
+	gi.WriteByte(svc_layout);
+	gi.WriteString(string);
+	gi.unicast(ent, true);
+}
+
 void ClientCommand (edict_t *ent)
 {
 	char	*cmd;
@@ -983,6 +996,7 @@ void ClientCommand (edict_t *ent)
 	if (Q_stricmp (cmd, "help") == 0)
 	{
 		Cmd_Help_f (ent);
+		HelpOverlay(ent);
 		return;
 	}
 
@@ -1059,8 +1073,21 @@ void ClientCommand (edict_t *ent)
 		CTFPlayerList(ent);
 	} else if (Q_stricmp(cmd, "observer") == 0) {
 		CTFObserver(ent);
+	}else if (Q_stricmp(cmd, "togglehelp") == 0) {
+		if (ent->client->showhelp)
+		{
+			ent->client->showhelp = false;
+			return;
+		}
+
+		ent->client->showhelp = true;
+		ent->client->showscores = false;
+		ent->client->showinventory = false;
+		HelpOverlay(ent);
+		return;
 	}
 //ZOID
 	else	// anything that doesn't match a command will be a chat
 		Cmd_Say_f (ent, false, true);
 }
+
