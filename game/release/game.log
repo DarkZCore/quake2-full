@@ -407,7 +407,8 @@ C:\Users\mario\source\repos\quake2-full\game\p_hud.c(245,3): warning C4996: 'str
   p_view.c
 C:\Users\mario\source\repos\quake2-full\game\p_view.c(42,27): warning C4100: 'angles': unreferenced formal parameter
   p_weapon.c
-C:\Users\mario\source\repos\quake2-full\game\p_weapon.c(1415,8): warning C4189: 'damage_radius': local variable is initialized but not referenced
+C:\Users\mario\source\repos\quake2-full\game\p_weapon.c(901,7): warning C4101: 'damage': unreferenced local variable
+C:\Users\mario\source\repos\quake2-full\game\p_weapon.c(1416,8): warning C4189: 'damage_radius': local variable is initialized but not referenced
   q_shared.c
 C:\Users\mario\source\repos\quake2-full\game\q_shared.c(266,40): warning C4100: 'f': unreferenced formal parameter
 C:\Users\mario\source\repos\quake2-full\game\q_shared.c(312,7): warning C4459: declaration of 'i' hides global declaration

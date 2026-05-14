@@ -874,6 +874,24 @@ void Weapon_Blaster (edict_t *ent)
 	Weapon_Generic (ent, 4, 8, 52, 55, pause_frames, fire_frames, Weapon_Blaster_Fire);
 }
 
+void sword_attack(edict_t* ent, int damage)
+{
+	vec3_t  forward, right, start, end, offset;
+	trace_t tr;
+
+	AngleVectors(ent->client->v_angle, forward, right, NULL);
+	VectorSet(offset, 24, 8, ent->viewheight - 8);
+	P_ProjectSource(ent->client, ent->s.origin, offset, forward, right, start);
+
+	VectorMA(start, 80, forward, end);
+	tr = gi.trace(start, NULL, NULL, end, ent, MASK_SHOT);
+
+	if (tr.fraction < 1.0 && tr.ent && tr.ent->takedamage)
+	{
+		T_Damage(tr.ent, ent, ent, forward, tr.endpos, tr.plane.normal, damage, 0, 0, MOD_HIT);
+	}
+}
+
 
 void Weapon_HyperBlaster_Fire (edict_t *ent)
 {
@@ -890,17 +908,7 @@ void Weapon_HyperBlaster_Fire (edict_t *ent)
 	}
 	else
 	{
-		if (! ent->client->pers.inventory[ent->client->ammo_index] )
-		{
-			if (level.time >= ent->pain_debounce_time)
-			{
-				gi.sound(ent, CHAN_VOICE, gi.soundindex("weapons/noammo.wav"), 1, ATTN_NORM, 0);
-				ent->pain_debounce_time = level.time + 1;
-			}
-			NoAmmoWeaponChange (ent);
-		}
-		else
-		{
+		
 			rotation = (ent->client->ps.gunframe - 5) * 2*M_PI/6;
 			offset[0] = -4 * sin(rotation);
 			offset[1] = 0;
@@ -910,13 +918,7 @@ void Weapon_HyperBlaster_Fire (edict_t *ent)
 				effect = EF_HYPERBLASTER;
 			else
 				effect = 0;
-			if (deathmatch->value)
-				damage = 15;
-			else
-				damage = 20;
-			Blaster_Fire (ent, offset, damage, true, effect);
-			if (! ( (int)dmflags->value & DF_INFINITE_AMMO ) )
-				ent->client->pers.inventory[ent->client->ammo_index]--;
+			sword_attack(ent, 50);
 
 			ent->client->anim_priority = ANIM_ATTACK;
 			if (ent->client->ps.pmove.pm_flags & PMF_DUCKED)
@@ -929,7 +931,6 @@ void Weapon_HyperBlaster_Fire (edict_t *ent)
 				ent->s.frame = FRAME_attack1 - 1;
 				ent->client->anim_end = FRAME_attack8;
 			}
-		}
 
 		ent->client->ps.gunframe++;
 		if (ent->client->ps.gunframe == 12 && ent->client->pers.inventory[ent->client->ammo_index])

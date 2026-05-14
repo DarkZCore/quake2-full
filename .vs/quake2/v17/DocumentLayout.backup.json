@@ -232,7 +232,7 @@
               "RelativeDocumentMoniker": "game\\p_weapon.c",
               "ToolTip": "C:\\Users\\mario\\source\\repos\\quake2-full\\game\\p_weapon.c",
               "RelativeToolTip": "game\\p_weapon.c",
-              "ViewState": "AgIAAGEEAAAAAAAAAAAYwGoEAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAH0DAAAAAAAAAAAvwJgDAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-04-08T22:32:52.29Z",
               "EditorCaption": ""
@@ -247,8 +247,7 @@
               "RelativeToolTip": "game\\g_weapon.c",
               "ViewState": "AgIAAPwAAAAAAAAAAAAvwBABAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2026-04-08T22:31:48.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T22:31:48.534Z"
             },
             {
               "$type": "Document",
@@ -260,8 +259,7 @@
               "RelativeToolTip": "game\\g_local.h",
               "ViewState": "AgIAAJIDAAAAAAAAAAAvwKYDAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-24T03:22:43.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T03:22:43.651Z"
             },
             {
               "$type": "Document",
